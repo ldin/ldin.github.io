@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <aside class="col-sm-4">
+    <form id="bookForm">
+      <p class="title">Настройки</p>
+      <div class="field">
+        <label for="name">Название</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="field">
+        <label for="author">Автор</label>
+        <input type="text" name="author" id="author">
+      </div>
+      <div class="field">
+        <label for="year">Год издания</label>
+        <input type="date" name="year" id="year">
+      </div>
+      <div class="field">
+        <label for="pages">Количество страниц</label>
+        <input type="number" name="pages" id="pages">
+      </div>
+      <div class="field">
+        <input type="submit" class="btn js-saveBook" value="Сохранить">
+      </div>
+
+    </form>
+  </aside>
+  <section class="col-sm-8">
+    <aside class="row search-block">
+      <div class="col-sm-6 block">
+        <div class="field">
+          <label for="searchForm">Найти по названию</label>
+          <input type="text" name="search" id="searchForm">
+        </div>
+
+      </div>
+    </aside>
+    <div class="row viewBooks js-viewBooks">
+
+    </div>
+  </section>
+
+  <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>

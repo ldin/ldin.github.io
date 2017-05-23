@@ -1,0 +1,28 @@
+.row:after, .row:before { display: table; clear: both; content: " "; }
+
+form{border: 1px solid #ccc; padding: 5%; margin: 5%;}
+.field{margin: 2% 0;}
+.field label{display: block;}
+.field input{display: block;width: 100%;}
+.field input:not([type=submit]){width: 90%; padding:3px 5%; border: 1px solid #ccc; margin: 5px -1px;}
+
+.book{border: 1px solid #ccc; padding: 5%; margin: 5%;}
+
+.btn{border: 1px solid #ccc; padding:5px 5%; margin-top:20px; text-decoration: none; background: #e5e5e5; color: #000;}
+.btn:hover{background: #ccc}
+.book .btn{ width: 30%;  margin: 0 4%;}
+
+.book .editing{height: 30px;}
+.book .editing >a{display: none;}
+.book:hover .editing >a{display: inline-block;}
+
+.viewBooks > article.hide{display: none;}
+.search-block > .block>div{padding: 5%;}
+
+@media all and (min-width: 767px) {
+    .col-sm-3{width: 25%; float: left;}
+    .col-sm-4{width: 33%; float: left;}
+    .col-sm-6{ width: 50%; float: left;}
+    .col-sm-8{ width: 66%; float: left;}
+    .col-sm-12{ width: 100%; float: none;}
+}
